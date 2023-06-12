@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}test-myconfig
+  namespace: {{ .Values.namespace }}
+data:
+  myvalue: "Hello world2"
